@@ -7,3 +7,7 @@
 - In this implementation, you start with a left pointer at the beginning of the array and a right pointer at the end of the array. While the left pointer is less than or equal to the right pointer, you calculate the mid index using integer division. If the value at the mid index is equal to the target, you return the mid index. If the value at the mid index is less than the target, you update the left pointer to mid + 1. If the value at the mid index is greater than the target, you update the right pointer to mid - 1. If the target is not found in the array, the loop will exit and you can return -1.
 
 - This binary search algorithm has a logarithmic time complexity of O(log n) because it halves the search space in each iteration.
+
+## Math.floor()
+
+- The Math.floor() static method always rounds down and returns the largest integer less than or equal to a given number.
