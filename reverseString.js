@@ -26,5 +26,53 @@ function removeSpace(s) {
     return newStr;
 }
 
-const str1 = "Hi Mark"
-console.log(removeSpace(str1))
+// const str1 = "Hi Mark"
+// console.log(removeSpace(str1))
+
+function hasDuplicates(arr){
+    
+    let map = {};
+
+    for (let i = 0; i < arr.length; i++){
+        if (map[arr[i]] === undefined) {
+            map[arr[i]] = 1;
+        } else {
+            map[arr[i]]++;
+        }
+    }
+
+    for (let key in map) {
+        if (map[key] > 1) {
+            return true
+        }
+    }
+    return false;
+}
+
+// const arr1 = [0, 1, 1, 2];
+// console.log(hasDuplicates(arr1));
+
+
+// set up two pointers
+// left pointer and right pointer
+// switch left and right indexes
+// create var to store left while swapping with right
+// while loop 
+// increment left
+// decrement right
+function revArr(arr) {
+    let left = 0;
+    let right = arr.length - 1;
+
+    while (left < right) {
+        let temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+        left++;
+        right--;
+    }
+    return arr;
+}
+
+// const arr1 = ['h','e','l','l','o'];
+// console.log(revArr(arr1));
