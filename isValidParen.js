@@ -1,7 +1,13 @@
-//create an empty stack
-//loop through string
-//create top var to compare closing to opening
-//
+// create an empty stack to store paranthesis
+// loop through the string
+// should start with opening
+// if opening push into stack
+// create const top to track that the last index of stack
+// if its not an opening, then check to see if closing matches the top
+    //if they match, then .pop and remove the last index in the stack
+    // if they dont match, then return false
+// stack should be empty if opening and closing are in correct order
+// return true if stack.length === 0;
 
 function isValid(s){
     const stack = [];
@@ -27,5 +33,5 @@ function isValid(s){
     return stack.length === 0;
 }
 
-const s1 = "(){}";
+const s1 = "({})";
 console.log(isValid(s1));
