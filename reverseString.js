@@ -76,3 +76,4 @@ function revArr(arr) {
 
 // const arr1 = ['h','e','l','l','o'];
 // console.log(revArr(arr1));
+
